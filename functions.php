@@ -374,6 +374,15 @@ function custum_sidebar_tutorial( $sidebar ) {
 add_filter( 'ocean_get_sidebar', 'custum_sidebar_tutorial' );
 
 
+// redirect author archive page to "About" page
+
+add_filter( 'author_link', 'my_author_link' );
+ 
+function my_author_link() {
+	return home_url( 'about' );
+}
+
+
 
 
 
