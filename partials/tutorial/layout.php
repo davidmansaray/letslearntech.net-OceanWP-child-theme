@@ -28,35 +28,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			$format = $format ? $format : 'thumbnail';
 			
-			get_template_part( 'partials/single/media/blog-single', $format );
+			get_template_part( 'partials/tutorial/media/blog-single', $format );
 
 		}
 
 		// Title
 		if ( 'title' == $element ) {
 
-			get_template_part( 'partials/single/header' );
+			get_template_part( 'partials/tutorial/header' );
 
 		}
 
 		// Meta
 		if ( 'meta' == $element ) {
 
-			get_template_part( 'partials/single/meta' );
+			get_template_part( 'partials/tutorial/meta' );
 
 		}
 
 		// Content
 		if ( 'content' == $element ) {
-
-			get_template_part( 'partials/single/content' );
+            
+            
+            
+			get_template_part( 'partials/tutorial/content' );
 
 		}
 
 		// Tags
 		if ( 'tags' == $element ) {
 
-			get_template_part( 'partials/single/tags' );
+			get_template_part( 'partials/tutorial/tags' );
 
 		}
 
@@ -71,21 +73,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 		// Next/Prev
 		if ( 'next_prev' == $element ) {
 
-			get_template_part( 'partials/single/next-prev' );
+			get_template_part( 'partials/tutorial/next-prev' );
 
 		}
 
 		// Author Box
 		if ( 'author_box' == $element ) {
 
-			get_template_part( 'partials/single/author-bio' );
+			get_template_part( 'partials/tutorial/author-bio' );
 
 		}
 
 		// Related Posts
 		if ( 'related_posts' == $element ) {
 
-			get_template_part( 'partials/single/related-posts' );
+			get_template_part( 'partials/tutorial/related-posts' );
 
 		}
 
