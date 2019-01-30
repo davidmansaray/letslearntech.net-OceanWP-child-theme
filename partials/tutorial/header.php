@@ -23,7 +23,13 @@ $heading = apply_filters( 'ocean_single_post_heading', $heading ); ?>
 <?php do_action( 'ocean_before_single_post_title' ); ?>
 
 <header class="entry-header clr">
-	<<?php echo esc_attr( $heading ); ?> class="single-post-title entry-title"<?php oceanwp_schema_markup( 'headline' ); ?>><?php the_title(); ?></<?php echo esc_attr( $heading ); ?>><!-- .single-post-title -->
+	<<?php echo esc_attr( $heading ); ?> class="tutorial-title entry-title"<?php oceanwp_schema_markup( 'headline' ); ?>><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></<?php echo esc_attr( $heading ); ?>><!-- .single-post-title -->
 </header><!-- .entry-header -->
 
 <?php do_action( 'ocean_after_single_post_title' ); ?>
+
+
+
+
+
+
