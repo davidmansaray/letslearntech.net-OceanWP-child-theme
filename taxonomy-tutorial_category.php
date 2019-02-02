@@ -23,10 +23,7 @@ get_header(); ?>
 			<?php do_action( 'ocean_before_content' ); ?>
 			
             
-			<div id="content" class="site-content clr">
 
-				<?php do_action( 'ocean_before_content_inner' ); ?>
-				
 
 				<?php
 				// Elementor `single` location
