@@ -21,6 +21,18 @@ if ( ! defined( 'ABSPATH' ) ) {
     <br>
  
  
+                 <div id="content" class="site-content clr">
+
+				<?php do_action( 'ocean_before_content_inner' ); ?>
+				 
+                         <div class="tutorial-info-box"> 
+
+                         
+                            <b><p>Tutorial Level:</b> <?php  echo the_field('tutorial_level'); ?></p>
+                            
+
+                         </div> 
+ 
 	<?php the_content();
     
        
