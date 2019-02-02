@@ -129,9 +129,10 @@ add_filter( 'ocean_main_metaboxes_post_types', 'oceanwp_metabox', 20 );
  *
  * Replace is_singular( 'post' ) by the function where you want to alter the layout
  * @return full-width, full-screen, left-sidebar or right-sidebar
- *
+  *
  */
-function my_post_layout_class( $class ) {
+
+function tutorial_layout_class( $class ) {
 
 	// Alter your layout
 	if ( is_singular( 'tutorial' ) ) {
@@ -142,7 +143,9 @@ function my_post_layout_class( $class ) {
 	return $class;
 
 }
-add_filter( 'ocean_post_layout_class', 'my_post_layout_class', 20 );
+add_filter( 'ocean_post_layout_class', 'tutorial_layout_class', 20 );
+
+
 
 
 // Disable page title on single posts
@@ -200,7 +203,25 @@ function my_author_link() {
 }
 
 
+/**
+ * Alter your post layouts
+ *
+ * Replace is_singular( 'post' ) by the function where you want to alter the layout
+ * @return full-width, full-screen, left-sidebar or right-sidebar
+ *
+ */
+function tutorial_category_layout_class( $class ) {
 
+	// Alter your layout
+	if ( is_tax( 'tutorial_category' ) ) {
+		$class = 'full-width';
+	}
+
+	// Return correct class
+	return $class;
+
+}
+add_filter( 'ocean_post_layout_class', 'tutorial_category_layout_class', 20 );
 
 
 ?>
