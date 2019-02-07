@@ -15,7 +15,7 @@ $sections = oceanwp_blog_single_meta();
 
 // Return if sections are empty
 if ( empty( $sections )
-	|| 'post' != get_post_type() ) {
+	|| 'tutorial' != get_post_type() ) {
 	return;
 }
 

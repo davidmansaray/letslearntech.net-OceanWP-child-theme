@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Only display for standard posts
-if ( 'post' != get_post_type() ) {
+if ( 'tutorial' != get_post_type() ) {
 	return;
 }
 

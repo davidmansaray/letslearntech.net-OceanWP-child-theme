@@ -32,45 +32,10 @@ get_header(); ?>
 					// Start loop
 					while ( have_posts() ) : the_post();
 
-							// EDD Page
-							if ( is_singular( 'download') ) {
-								get_template_part( 'partials/edd/single' );
-							}
-
-							// Single Page
-							elseif ( is_singular( 'page' ) ) {
-
-								get_template_part( 'partials/page/layout' );
-
-							}
-
-							// Library post types
-		    				elseif ( is_singular( 'oceanwp_library' )
-		    						|| is_singular( 'elementor_library' ) ) {
-
-		    					get_template_part( 'partials/library/layout' );
-
-		    				}
-					
-								// Tutorial post types
-		    				elseif ( is_singular( 'oceanwp_library' )
-		    						|| is_singular( 'elementor_library' ) ) {
-
-		    					get_template_part( 'partials/tutorial/layout' );
-								
-								
-
-		    				}
-
-
-							// All other post types.
-							else {
 
 		    					get_template_part( 'partials/tutorial/layout', get_post_type() );
                                 
-                                
-
-		  					}
+                        
 
 					endwhile;
 

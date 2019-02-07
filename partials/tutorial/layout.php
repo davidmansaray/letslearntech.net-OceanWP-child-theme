@@ -22,16 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	// Loop through elements
 	foreach ( $elements as $element ) {
 
-		// Featured Image
-		if ( 'featured_image' == $element
-			&& ! post_password_required() ) {
-
-			$format = $format ? $format : 'thumbnail';
-			
-			get_template_part( 'partials/tutorial/media/blog-single', $format );
-
-		}
-
+		
 		// Title
 		if ( 'title' == $element ) {
 

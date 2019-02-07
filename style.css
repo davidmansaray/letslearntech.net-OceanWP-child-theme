@@ -13,8 +13,88 @@ Version: 1.0
 
 .tutorial-info-box {
     
-    background-color: #FCF5C0;
-    width: 640px;
+    background-color: #FCF5C0 !important;
+    width: 640px !important;
     
 }
 
+
+header.minimal-header.clr {
+    background-color: #31B1EA !important;
+}
+
+i.icon.before.fa.fa-html5 {
+    color: #000000 !important;
+}
+
+i.icon.before.fa.fa-css3 {
+    color: #000000 !important;
+}
+
+i.icon.before.fa.fa-cog {
+    color: #000000 !important;
+}
+
+i.icon.before.fa.fa-wordpress {
+    color: #000000 !important;
+}
+
+
+
+a.site-title.site-logo-text {
+    color: #ffffff !important;
+    font-weight: bold !important;
+}
+
+
+
+span.text-wrap {
+    color: #ffffff !important;
+}
+
+
+
+span.icon-magnifier {
+    color: #ffffff !important;
+}
+
+div.tutorial-info-box p b {
+    color: #808080 !important;
+}
+
+input.medium {
+    border-color: #000000 !important;
+    width: 100% !important;
+}
+
+span.menu-text {
+    color: #000000 !important;
+}
+
+
+
+div.site-content.clr {
+    width: 640px !important;
+}
+
+a.pbytax-post-title {
+    color: #25B0ED !important;
+}
+
+.category-tutorial-list {
+    margin-top: 0px !important;
+
+    pbytax-list {
+    line-height: 1em !important;
+    text-decoration: underline !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    text-transform: none !important;
+    font-size: 1.1em !important;
+}
+
+div.execphpwidget {
+    height: 50px !important;
+}
+
+    
